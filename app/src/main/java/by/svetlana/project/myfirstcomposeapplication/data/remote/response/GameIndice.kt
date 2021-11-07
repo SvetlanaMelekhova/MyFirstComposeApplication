@@ -1,6 +1,8 @@
 package by.svetlana.project.myfirstcomposeapplication.data.remote.response
 
+import com.google.gson.annotations.SerializedName
+
 data class GameIndice(
-    val game_index: Int,
-    val version: Version
+    @SerializedName("game_index") val gameIndex: Int,
+    @SerializedName("version") val version: Version
 )

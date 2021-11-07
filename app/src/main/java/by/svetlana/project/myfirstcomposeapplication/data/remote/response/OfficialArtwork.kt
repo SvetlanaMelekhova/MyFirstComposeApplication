@@ -1,5 +1,7 @@
 package by.svetlana.project.myfirstcomposeapplication.data.remote.response
 
+import com.google.gson.annotations.SerializedName
+
 data class OfficialArtwork(
-    val front_default: String
+    @SerializedName("front_default") val frontDefault: String
 )

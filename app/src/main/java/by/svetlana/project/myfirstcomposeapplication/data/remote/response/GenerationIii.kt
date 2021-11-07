@@ -1,7 +1,9 @@
 package by.svetlana.project.myfirstcomposeapplication.data.remote.response
 
+import com.google.gson.annotations.SerializedName
+
 data class GenerationIii(
-    val emerald: Emerald,
-    val firered-leafgreen: FireredLeafgreen,
-    val ruby-sapphire: RubySapphire
+    @SerializedName("emerald") val emerald: Emerald,
+    @SerializedName("firered-leafgreen") val fireredLeafgreen: FireredLeafgreen,
+    @SerializedName("ruby-sapphire") val rubySapphire: RubySapphire
 )

@@ -1,6 +1,8 @@
 package by.svetlana.project.myfirstcomposeapplication.data.remote.response
 
+import com.google.gson.annotations.SerializedName
+
 data class Move(
-    val move: MoveX,
-    val version_group_details: List<VersionGroupDetail>
+    @SerializedName("move") val move: MoveX,
+    @SerializedName("version_group_details") val versionGroupDetails: List<VersionGroupDetail>
 )

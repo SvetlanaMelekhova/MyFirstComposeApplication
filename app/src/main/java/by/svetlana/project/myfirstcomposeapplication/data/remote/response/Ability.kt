@@ -1,7 +1,9 @@
 package by.svetlana.project.myfirstcomposeapplication.data.remote.response
 
+import com.google.gson.annotations.SerializedName
+
 data class Ability(
-    val ability: AbilityX,
-    val is_hidden: Boolean,
-    val slot: Int
+    @SerializedName("ability")val ability: AbilityX,
+    @SerializedName("is_hidden")val isHidden: Boolean,
+    @SerializedName("slot")val slot: Int
 )

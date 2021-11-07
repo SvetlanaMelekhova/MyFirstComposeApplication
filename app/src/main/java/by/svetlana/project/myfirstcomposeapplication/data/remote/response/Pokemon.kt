@@ -1,22 +1,24 @@
 package by.svetlana.project.myfirstcomposeapplication.data.remote.response
 
+import com.google.gson.annotations.SerializedName
+
 data class Pokemon(
-    val abilities: List<Ability>,
-    val base_experience: Int,
-    val forms: List<Form>,
-    val game_indices: List<GameIndice>,
-    val height: Int,
-    val held_items: List<Any>,
-    val id: Int,
-    val is_default: Boolean,
-    val location_area_encounters: String,
-    val moves: List<Move>,
-    val name: String,
-    val order: Int,
-    val past_types: List<Any>,
-    val species: Species,
-    val sprites: Sprites,
-    val stats: List<Stat>,
-    val types: List<Type>,
-    val weight: Int
+    @SerializedName("abilities") val abilities: List<Ability>,
+    @SerializedName("base_experience") val baseExperience: Int,
+    @SerializedName("forms") val forms: List<Form>,
+    @SerializedName("game_indices") val gameIndices: List<GameIndice>,
+    @SerializedName("height") val height: Int,
+    @SerializedName("held_items") val heldItems: List<Any>,
+    @SerializedName("id") val id: Int,
+    @SerializedName("is_default") val isDefault: Boolean,
+    @SerializedName("location_area_encounters") val locationAreaEncounters: String,
+    @SerializedName("moves") val moves: List<Move>,
+    @SerializedName("back_default") val name: String,
+    @SerializedName("name") val order: Int,
+    @SerializedName("past_types") val pastTypes: List<Any>,
+    @SerializedName("species") val species: Species,
+    @SerializedName("sprites") val sprites: Sprites,
+    @SerializedName("stats") val stats: List<Stat>,
+    @SerializedName("types") val types: List<Type>,
+    @SerializedName("weight") val weight: Int
 )
